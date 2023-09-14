@@ -244,3 +244,31 @@ console.log(pokemon);
 
 Questions & Clarifications
 Maybe just a few more call back functions. Its easy when you see them written for you, writing them is hard.
+
+9. Async Javascript
+   Call Stack
+   Event Loop
+   Web APIs
+   Promises
+
+const promise = new Promose((Resolve, reject) => {
+resolve('We did it babyyy')
+})
+
+promise.then(data => {
+console.log(date)
+})
+.catch(err => {
+console.log(err)
+})
+
+fetch is a promise
+
+async function getTodos(){
+conse response = await fetch("fetch here")
+console.log(1)
+console.log(response)
+console.log(2)
+}
+
+Questions & Clarifications
