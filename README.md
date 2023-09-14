@@ -272,3 +272,13 @@ console.log(2)
 }
 
 Questions & Clarifications
+None
+
+Reflection
+
+1. Clarity of these set of videos was good overall, a few terms or functions seem a bit beyond what we have done before but it did not slow comprehension overall.
+
+2. Will help clean up code, and also the destructuring will be immediately useful. Many more tools in making a page do what you want.
+
+3. More work on Asych, callbacks, observables and builders would prob be needed.
+   The rest dont seem too bad at this time, but trying to put them in practice might show something different.
