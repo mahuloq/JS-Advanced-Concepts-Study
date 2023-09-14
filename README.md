@@ -138,3 +138,56 @@ observer.broadcast("Hello from the observable");
 
 Questions & Clarifications
 Just go over the clicker +/-
+
+5. Learn JavaScript Destructuring in 20 minutes (For Beginners)
+   Instead of doing
+   let person = {
+   firstname: "blah",
+   lastName: "blah"
+   }
+   then pulling that info out, you can skip it by doing
+   let {firstName, lastName} = person
+   or rename them
+   let {firstName: fName, lastName: lName} = person
+
+   Can also do it with arrays.
+   const arr[1,2,3]
+   let [x,y,z] = arr
+   or skip const and go
+   let [a,b,c,d] = [1,2,3,4]
+
+can also pull out part of info
+const names = ['Son','Jay','Brian','Bob']
+
+const [x, ...y] = names
+console.log(x) = Sonny
+console.log(y) = 'Jay', 'brian', 'bob'
+
+Nested object destructuring
+let member = {
+id:01,
+name:{
+firstName: "James",
+lastName: "Bond"
+}
+}
+
+let {name: {firstName, lastName}} = member;
+
+let displayFullname = (person) => `${person.firstName} ${person.lastName}`;
+let person = {
+firstName: 'Sonny'
+lastname: 'Sangha'
+}
+
+displayFullName(person)
+
+or do
+let displayFullname = ({firstName, lastName}) => `${firstName} ${lastName}`;
+
+Questions & Clarifications
+None
+
+6. JS Spread
+
+Questions & Clarifications
