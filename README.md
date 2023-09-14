@@ -189,5 +189,58 @@ Questions & Clarifications
 None
 
 6. JS Spread
+   ...variable
+   spreads an interable
+
+const fullfamily2 = [...parents,...kids]
+combines arrays into one
+
+or make an actual copy of an array
+const painting = [paint1, paint2, paint3]
+
+const copies =[...painting]
 
 Questions & Clarifications
+None
+
+7. Memoization And Dynamic Programming Explained
+   Store previous values to increase speed of code executing
+   do it by returning results already gathered back into the function, if they repeat
+
+Questions & Clarifications
+what does putting prevValues in result= fib(n-1, prevValues) + fib(n-2, prevValues)
+do
+
+8. JavaScript Callbacks Explained
+   Has a function do some work, then report/callback a previous function
+   Map, reduce, sort ect
+   functions that Gets passed to another function as a parameter
+   that function will do some work, then call the callback function
+
+const names = ["james", "jess", "lily", "sevy"]
+
+const myForEach = (arr, cb) => {
+for (let i=0;i<arr.length; i++;){
+const element = arr[i];
+cb(element)
+}
+}
+
+myForEach(names,(name) => {
+console.log(name);
+})
+
+const loadPokemon( id, cb) => {
+fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+.then(res=>res,json())
+.then(data => {
+cb(data)
+})
+}
+
+loadPokemon(56,(pokemon) => {
+console.log(pokemon);
+})
+
+Questions & Clarifications
+Maybe just a few more call back functions. Its easy when you see them written for you, writing them is hard.
